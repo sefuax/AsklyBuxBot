@@ -457,7 +457,7 @@ async def handle_task_start(update: Update, context: ContextTypes.DEFAULT_TYPE) 
 
     await update.message.reply_text(
     f"👤 Username:\n<code>{username}</code>\n\n"
-    f"🔓 Password:\n<code>filesubmit@2</code>\n\n"
+    f"🔓 Password:\n<code>axiex@3</code>\n\n"
     "📱 Open account with above username and password.\n"
     "Then submit account with 2FA Key below 😄",
     parse_mode="HTML",
