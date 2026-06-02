@@ -1820,8 +1820,8 @@ def main():
                 MessageHandler(filters.Regex("^🔙 Back$"), handle_back_to_home),
             ],
             TASK_2FA_INFO: [
-                MessageHandler(filters.Regex("^✨ Start$"), handle_task_start),
                 MessageHandler(filters.Regex("^Cancel ❌$"), handle_task_cancel),
+                MessageHandler(filters.Regex("^✨ Start$"), handle_task_start),
                 MessageHandler(filters.Regex("^🔙 Back$"), handle_back_to_home),
             ],
             TASK_2FA_AWAIT_KEY: [
