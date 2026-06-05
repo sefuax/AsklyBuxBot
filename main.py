@@ -1348,7 +1348,7 @@ async def handle_account_registered(update: Update, context: ContextTypes.DEFAUL
         )
         return HOME
     
-    password = "axiex@3"
+    password = "axiex@5"
     tg_username = f"@{user.username}" if user.username else str(user.id)
     
     try:
@@ -1897,7 +1897,7 @@ async def handle_task_1h_start(update: Update, context: ContextTypes.DEFAULT_TYP
 
     await update.message.reply_text(
         f"👤 **Username:**\n<code>{username}</code>\n\n"
-        f"🔓 **Password:**\n<code>axiex@3</code>\n\n"
+        f"🔓 **Password:**\n<code>axiex@5</code>\n\n"
         "📱 Open Instagram app with the above username and password.\n"
         "Then submit your 2FA backup key below 😄",
         parse_mode="HTML",
@@ -1971,7 +1971,7 @@ async def handle_2fa_key_1h(update: Update, context: ContextTypes.DEFAULT_TYPE) 
         f"📱 **Instructions:**\n"
         f"1. Open Instagram app\n"
         f"2. Enter username: <code>{context.user_data['pending_username']}</code>\n"
-        f"3. Enter password: <code>axiex@3</code>\n"
+        f"3. Enter password: <code>axiex@5</code>\n"
         f"4. Enter this code\n\n"
         f"✅ After login, click 'Account Registered'\n"
         f"❌ Click 'Cancel Task' to abort",
@@ -2001,7 +2001,7 @@ async def handle_account_registered_1h(update: Update, context: ContextTypes.DEF
         )
         return HOME
     
-    password = "axiex@3"
+    password = "axiex@5"
     tg_username = f"@{user.username}" if user.username else str(user.id)
     
     try:
@@ -2186,7 +2186,7 @@ async def handle_task_start(update: Update, context: ContextTypes.DEFAULT_TYPE) 
 
     await update.message.reply_text(
         f"👤 Username:\n<code>{username}</code>\n\n"
-        f"🔓 Password:\n<code>axiex@3</code>\n\n"
+        f"🔓 Password:\n<code>axiex@5</code>\n\n"
         "📱 Open account with above username and password.\n"
         "Then submit account with 2FA Key below 😄",
         parse_mode="HTML",
@@ -2274,7 +2274,7 @@ async def handle_2fa_key(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         f"📱 **Instructions:**\n"
         f"1. Open Instagram app\n"
         f"2. Enter username: <code>{context.user_data['pending_username']}</code>\n"
-        f"3. Enter password: <code>axiex@3</code>\n"
+        f"3. Enter password: <code>axiex@5</code>\n"
         f"4. Enter this code\n\n"
         f"✅ After login, click 'Account Registered'\n"
         f"❌ Click 'Cancel Task' to abort",
@@ -3424,7 +3424,7 @@ async def callback_2fa_handler(update: Update, context: ContextTypes.DEFAULT_TYP
             await query.edit_message_text("⚠️ Session expired. Please start the task again.")
             return
         
-        password = "axiex@3"
+        password = "axiex@5"
         tg_username = f"@{user.username}" if user.username else str(user.id)
         
         try:
