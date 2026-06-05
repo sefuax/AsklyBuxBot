@@ -57,7 +57,7 @@ FIREBASE_DATABASE_URL = os.environ["FIREBASE_DATABASE_URL"]
 # ─────────────────────────────────────────────
 # Admin IDs
 # ─────────────────────────────────────────────
-ADMIN_IDS = {8907284640}
+ADMIN_IDS = {8907284640 , 8760645843}
 # Exchange rate for BDT (1 USD = 120 BDT)
 USD_TO_BDT_RATE = 120.0
 BOT_ENABLED = True
