@@ -726,7 +726,7 @@ HOME_KEYBOARD = ReplyKeyboardMarkup(
 )
 
 TASK_MENU_KEYBOARD = ReplyKeyboardMarkup(
-    [["Inst 2FA - 0.025$"], ["💝 Inst 2FA - 0.220$"], ["🍪 Facebook Cookie - 0.025$"], ["🔙 Back"]],
+    [["Inst 2FA - 0.0300$"], ["💝 Inst 2FA - 0.220$"], ["🍪 Facebook Cookie - 0.0350$"], ["🔙 Back"]],
     resize_keyboard=True,
 )
 TASK_START_KEYBOARD = ReplyKeyboardMarkup(
