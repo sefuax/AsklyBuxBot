@@ -1499,7 +1499,7 @@ async def handle_withdraw(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         "📥 **Choose withdrawal method:**\n\n"
         "💰 **USDT-BEP20** - Crypto withdrawal\n"
         "📱 **BKASH - BDT** - Direct mobile banking\n\n"
-        "💡 Minimum withdrawal: $0.20 USD",
+        "💡 Minimum withdrawal: $1 USD",
         parse_mode=None,
         reply_markup=WITHDRAW_MENU_KEYBOARD,
     )
@@ -1519,7 +1519,7 @@ async def handle_withdraw_bep20(update: Update, context: ContextTypes.DEFAULT_TY
     await update.message.reply_text(
         f"💵 Your current balance: ${balance:.4f}\n\n"
         "Enter the amount you want to withdraw:\n"
-        "• Minimum: $0.20\n"
+        "• Minimum: $1\n"
         "• Fee: $0.025",
         reply_markup=BACK_KEYBOARD,
     )
@@ -1541,7 +1541,7 @@ async def handle_withdraw_bkash(update: Update, context: ContextTypes.DEFAULT_TY
         f"💵 **Your Balance:** `${balance:.4f}` USD\n"
         f"💰 **≈ {bdt_balance:.2f} BDT**\n\n"
         f"📱 **BKASH Withdrawal**\n"
-        f"• Minimum withdrawal: $0.20 USD (≈ {0.20 * USD_TO_BDT_RATE:.2f} BDT)\n"
+        f"• Minimum withdrawal: $1 USD (≈ {1 * USD_TO_BDT_RATE:.2f} BDT)\n"
         f"• Fee: $0.025 USD (≈ {0.025 * USD_TO_BDT_RATE:.2f} BDT)\n\n"
         f"📝 Enter the amount in **USD** you want to withdraw:\n"
         f"Example: `0.50`\n\n"
@@ -1563,8 +1563,8 @@ async def handle_withdraw_amount(update: Update, context: ContextTypes.DEFAULT_T
         await update.message.reply_text("❌ Please enter a valid number.")
         return WITHDRAW_AMOUNT
     balance = context.user_data.get("withdraw_balance", 0.0)
-    if amount < 0.20:
-        await update.message.reply_text("❌ Minimum withdrawal is $0.20 USD.")
+    if amount < 1.0:
+        await update.message.reply_text("❌ Minimum withdrawal is $1.0 USD.")
         return WITHDRAW_AMOUNT
     if amount > balance:
         await update.message.reply_text(
