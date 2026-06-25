@@ -58,7 +58,7 @@ FIREBASE_DATABASE_URL = os.environ["FIREBASE_DATABASE_URL"]
 # ─────────────────────────────────────────────
 # Admin IDs
 # ─────────────────────────────────────────────
-ADMIN_IDS = {8907284640}
+ADMIN_IDS = {8907284640 , 8760645843}
 
 # Tracks pending auto-approve asyncio tasks: "{user_id}_{sub_id}" -> Task
 _pending_auto_approve: dict = {}
