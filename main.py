@@ -1080,8 +1080,8 @@ async def handle_task_2fa_info(update: Update, context: ContextTypes.DEFAULT_TYP
             "This task is currently disabled by the administrator.\n\n"
             "💡 Please try again later.\n\n"
             "📞 For inquiries, contact support:\n"
-            "   👤 @Saafi_Rhman\n"
-            "   👤 @its_muin",
+            "   👤 @axSaaFe\n"
+            "   👤 @muin_007",
             reply_markup=HOME_KEYBOARD
         )
         return HOME
@@ -1095,7 +1095,7 @@ async def handle_task_2fa_info(update: Update, context: ContextTypes.DEFAULT_TYP
         "👉 No need to send any info\n"
         "✅ Just Send your 2fa key 🔐.\n\n"
         "⏳ Review time: 1 minute ⏳\n\n"
-        f"💰 Reward: `$0.0330` per approval",
+        f"💰 Reward: `$0.0300` per approval",
         reply_markup=TASK_START_KEYBOARD,
     )
     return TASK_2FA_INFO
