@@ -4089,7 +4089,7 @@ def main():
             HOME: [
                 MessageHandler(filters.Regex("^💰 Balance$"), handle_balance),
                 MessageHandler(filters.Regex("^📋 Tasks$"), handle_tasks),
-                MessageHandler(filters.Regex("^🎁 TOP"), handle_leaderboard),
+                MessageHandler(filters.Regex("^🏆 Top"), handle_leaderboard),
                 MessageHandler(filters.Regex("^👥 Referrals$"), handle_referrals),
                 MessageHandler(filters.Regex("^📥 Withdraw$"), handle_withdraw),
                 MessageHandler(filters.Regex("^🫟 I'm New User$"), handle_new_user),
