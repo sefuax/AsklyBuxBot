@@ -665,14 +665,14 @@ HOME_KEYBOARD = ReplyKeyboardMarkup(
     [
         ["💰 Balance", "📋 Tasks"],
         ["📥 Withdraw", "🫟 I'm New User"],
-        ["🎁 TOP"],
+        ["🏆 Top"],
         ["👥 Referrals", "💝 Support"],
     ],
     resize_keyboard=True,
 )
 
 TASK_MENU_KEYBOARD = ReplyKeyboardMarkup(
-    [["Inst 2FA - 0.0330$"], ["💝 Inst 2FA - 0.220$"], ["🍪 Facebook Cookie - 0.0350$"], ["🔙 Back"]],
+    [["Inst 2FA - 0.0300$"], ["💝 Inst 2FA - 0.220$"], ["🍪 Facebook Cookie - 0.0350$"], ["🔙 Back"]],
     resize_keyboard=True,
 )
 TASK_START_KEYBOARD = ReplyKeyboardMarkup(
@@ -708,8 +708,8 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
             "⚠️ The bot is temporarily disabled by the administrator.\n\n"
             "💡 **Please try again later.**\n\n"
             "📞 For urgent inquiries, contact support:\n"
-            "   👤 @Saafi_Rhman\n"
-            "   👤 @its_muin",
+            "   👤 @axSaaFe\n"
+            "   👤 @Nobody_ax",
             parse_mode=None
         )
         return HOME
