@@ -949,9 +949,9 @@ async def handle_new_user(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         logger.error(f"Failed to add user to all_users: {e}")
     await update.message.reply_text(
         "🎁 2𝙁𝘼 𝙈𝙀𝙏𝙃𝙊𝘿?!\n\n"
-        "𝙇𝙞𝙣𝙠 : [t.me](https://t.me/c/4297868120/51\n\n)"
+        "𝙇𝙞𝙣𝙠 : https://t.me/asklybux"
         "💝 𝘾𝙤𝙤𝙠𝙞𝙚 𝙈𝙚𝙩𝙝𝙤𝙙?\n\n"
-        "𝙇𝙞𝙣𝙠 : [t.me](https://t.me/c/4297868120/43\n\n)"
+        "𝙇𝙞𝙣𝙠 : https://t.me/SaaFe_Bio"
         "🛑 𝘼𝙡𝙨𝙤 𝙧𝙚𝙢𝙚𝙢𝙗𝙚𝙧 𝙒𝙚 𝙙𝙤𝙣'𝙩 𝙖𝙙𝙙𝙚𝙙 𝙘𝙤𝙤𝙠𝙞𝙚 𝙩𝙖𝙨𝙠 𝙞𝙣 𝙤𝙪𝙧 𝙗𝙤𝙩...",
         reply_markup=HOME_KEYBOARD,
         disable_web_page_preview=True,
