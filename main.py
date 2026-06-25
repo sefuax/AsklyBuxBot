@@ -1055,7 +1055,7 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
 
     keyboard = []
     if task_settings.get("task_6h_enabled", True):
-        keyboard.append(["Inst 2FA - 0.0330$"])
+        keyboard.append(["Inst 2FA - 0.0300$"])
     if task_settings.get("task_1h_enabled", True):
         keyboard.append(["💝 Inst 2FA - 0.220$"])
     if fb_settings.get("fb_task_enabled", True):
